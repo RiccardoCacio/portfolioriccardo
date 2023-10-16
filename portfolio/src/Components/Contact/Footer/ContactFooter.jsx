@@ -11,7 +11,7 @@ const ContactFooter = () => {
             <div className='w-[80%] max-w-[900px] border-[0.1px] rounded-xl border-black bg-white flex justify-between  '>
                 <p className='mt-[3px] ml-[5px] text-base'>Developed By Riccardo Cacio.</p>
                 <div className='flex place-content-end'>
-                    <img src={Sticker} alt="Sticker icon" className='h-[20px] mt-[5px] mr-[9px] max-md:mt-4' />
+                    <img src={Sticker} alt="Sticker icon" className='h-[20px] mt-[5px] mr-[9px] max-md:mt-7' />
                 </div>
             </div>
             <img src={Camera} alt="Photocamera icon" className='h-[25px] max-md:mt-3' />

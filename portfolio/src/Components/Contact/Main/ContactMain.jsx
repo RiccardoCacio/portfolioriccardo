@@ -72,7 +72,7 @@ const ContactMain = () => {
             </div>
             <div data-aos="fade-right">
                 <MessageBox
-                    MessageText={<a className='hover:text-orange-500' href='mailto:riccardo1918@live.it'>Click Here to send me a mail!</a>}
+                    MessageText={<a className='hover:text-orange-500 text-[#3074f2]' href='mailto:riccardo1918@live.it'>Click Here to send me a mail!</a>}
                     MessageTime={whatTime}
                 />
             </div>
@@ -84,13 +84,13 @@ const ContactMain = () => {
             </div>
             <div data-aos="fade-right">
                 <MessageBox
-                    MessageText={<a className='hover:text-orange-500 max-md:text-[#3074f2]' href='https://www.linkedin.com/in/riccardo-cacio-98713017a/' target='_blank'>My Linkedin Profile.</a>}
+                    MessageText={<a className='hover:text-orange-500 text-[#3074f2]' href='https://www.linkedin.com/in/riccardo-cacio-98713017a/' target='_blank'>My Linkedin Profile.</a>}
                     MessageTime={whatTime} profili social
                 />
             </div>
             <div data-aos="fade-right">
                 <MessageBox
-                    MessageText={<a className='hover:text-orange-500 max-md:text-[#3074f2]' href='https://github.com/RiccardoCacio' target='_blank'>My GitHub Profile.</a>}
+                    MessageText={<a className='hover:text-orange-500 text-[#3074f2]' href='https://github.com/RiccardoCacio' target='_blank'>My GitHub Profile.</a>}
                     MessageTime={whatTime}
                 />
             </div>
