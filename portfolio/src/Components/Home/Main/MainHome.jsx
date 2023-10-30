@@ -51,10 +51,10 @@ const MainHome = () => {
 
     return (
         <main className='pr-[10%] mb-[100px] pl-[10%] flex flex-wrap justify-center gap-[100px] max-md:pr-[5%] max-md:pl-[5%] max-md:gap-[50px]'>
-            <div data-aos="fade-right">
+            <div data-aos="flip-left">
                 <ParagraphBox titleP={aboutMe} paragraph={aboutMeParagraph} />
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="flip-right">
                 <ParagraphBox titleP={skills} paragraph={skillsParagraph} />
             </div>
         </main>
