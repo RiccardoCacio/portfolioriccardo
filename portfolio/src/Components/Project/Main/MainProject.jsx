@@ -7,6 +7,8 @@ import Gameboy from '../../../Img/copertineProgetti/gameboy.png'
 import Yourworld from '../../../Img/copertineProgetti/yourworldimg.png'
 import CityStats from '../../../Img/copertineProgetti/cityS.png'
 import ShoppingList from '../../../Img/copertineProgetti/shoppingList.png'
+import Pokedex from '../../../Img/copertineProgetti/Pokedex.png'
+
 import ProjectBox from './ProjectBox'
 
 
@@ -55,6 +57,7 @@ const MainProject = () => {
     const citystatsP = "I developed CityStats for the Start2Impact advanced Javascript test. This WebApp allows you to collect data on the quality of life in the most famous cities via API calls."
     const shoppinglistP = "This to-do-list is a personal project created to help users with their shopping list. To ensure that users do not lose their shopping list, it is saved in the device's local storage!"
     const yourworldP = "YourWorld is the latest project of the Start2Impact FrontEnd Developer Master. This 'SPA' allows the user to have all the latest data regarding Climate Change! For me this wasn't a simple project but a real campaign to raise awareness of the topics covered."
+    const pokedexP = "Welcome to my Pokédex project made with React and Tailwind! In this project, I created a web application that acts as a digital Pokédex, allowing users to search for Pokémon and view details such as the Pokémon's picture and some key statistics."
     return (
         <main>
             <div className='flex flex-wrap justify-around gap-4 mt-[150px] ml-[10%] mr-[10%] max-md:flex-col items-center max-md:mt-[100px] max-md:mr-[2%] max-md:ml-[2%]'>
@@ -122,6 +125,17 @@ const MainProject = () => {
                         ProjectParagraph={yourworldP}
                         ProjectTech={'Html, React, JSX, CSS, Helmet, ReactRouter, Axios, Chart.Js'}
                         ProjectLink={'https://your-world.netlify.app'}
+                    />
+                </div>
+
+                <div data-aos="flip-down">
+                    <ProjectBox
+                        ProjectTitle={'07 Pokedex'}
+                        ProjectImg={Pokedex}
+                        ProjectAlt={'Pokedex Img'}
+                        ProjectParagraph={pokedexP}
+                        ProjectTech={'Html, React, JSX, Tailwind, Axios'}
+                        ProjectLink={'https://pokedexriccardoc.netlify.app/'}
                     />
                 </div>
             </div>
