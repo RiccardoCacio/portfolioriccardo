@@ -5,18 +5,16 @@ import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Project from './Components/Project/Project';
 import { BrowserRouter as Router, Routes, Link, Route } from 'react-router-dom';
+import ScrollToTop from './Function/ScrollToTop';
 function App() {
   return (
     <Router>
-      <div className='text-center font-Montserrat bg-[#efe6dc]'>
-        {/* <Navbar /> */}
-
+      <div className='text-center font-Montserrat bg-[#efe6dc] '>
+        <ScrollToTop />
         <Routes>
-
           <Route path='/' element={<Home />} />
           <Route path='/project' element={<Project />} />
           <Route path='/contact' element={<Contact />} />
-
         </Routes>
       </div>
     </Router>

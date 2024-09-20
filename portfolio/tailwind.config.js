@@ -5,8 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        'extra-loose': '0.9',
+        '12': '3rem',
+      },
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
+      },
+      backgroundImage: {
+        'Hbg': "url('./Img/Hbg.png')",
       },
     },
   },
