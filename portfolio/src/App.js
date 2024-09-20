@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Project from './Components/Project/Project';
 import { BrowserRouter as Router, Routes, Link, Route } from 'react-router-dom';
 import ScrollToTop from './Function/ScrollToTop';
+import CursorIcon from './Components/CursorIcon/CursorIcon';
 function App() {
   return (
     <Router>
@@ -15,6 +16,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/project' element={<Project />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/cursoricon' element={<CursorIcon />} />
+
         </Routes>
       </div>
     </Router>

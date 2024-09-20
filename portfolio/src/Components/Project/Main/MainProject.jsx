@@ -64,7 +64,7 @@ const MainProject = () => {
         <main>
             <div className='flex flex-wrap justify-around gap-4 mt-[150px] ml-[10%] mr-[10%] max-md:flex-col items-center max-md:mt-[100px] max-md:mr-[2%] max-md:ml-[2%]'>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-pizza'>
                     <ProjectBox
                         ProjectTitle={'01 Random Pizza'}
                         ProjectImg={RandomPizza}
@@ -75,7 +75,7 @@ const MainProject = () => {
                     />
                 </div>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-palette'>
                     <ProjectBox
                         ProjectTitle={'02 Change Color'}
                         ProjectImg={ChangeColor}
@@ -86,7 +86,7 @@ const MainProject = () => {
                     />
                 </div>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-mario' >
                     <ProjectBox
                         ProjectTitle={'03 Gameboy'}
                         ProjectImg={Gameboy}
@@ -97,7 +97,7 @@ const MainProject = () => {
                     />
                 </div>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-carrello'>
                     <ProjectBox
                         ProjectTitle={'04 Shopping List'}
                         ProjectImg={ShoppingList}
@@ -108,7 +108,7 @@ const MainProject = () => {
                     />
                 </div>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-world'>
                     <ProjectBox
                         ProjectTitle={'05 Yourworld'}
                         ProjectImg={Yourworld}
@@ -119,7 +119,7 @@ const MainProject = () => {
                     />
                 </div>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-poke'>
                     <ProjectBox
                         ProjectTitle={'06 Pokedex'}
                         ProjectImg={Pokedex}
@@ -130,7 +130,7 @@ const MainProject = () => {
                     />
                 </div>
 
-                <div data-aos="flip-down">
+                <div data-aos="flip-down" className='cursor-home'>
                     <ProjectBox
                         ProjectTitle={'07 La Casa Di Eva'}
                         ProjectImg={LaCasaDiEva}

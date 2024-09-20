@@ -32,14 +32,12 @@ const HeaderHome = () => {
                 </span></h3>
             </div>
             <div className='flex justify-center mt-[-150px] max-md:mt-[-150px]'>
-                <div className='flex flex-col h-[510px] w-[400px] p-7 mt-[221px] rounded-3xl shadow-2xl max-md:h-[700px] bg-[#fee2c6]'>
-                    <img className='rounded-3xl h-[250px] w-[400px]' src={Hbg2} alt="" />
-
+                <div className='flex flex-col h-[510px] w-[400px] p-7 mt-[221px] rounded-3xl shadow-2xl max-md:h-[500px] max-md:w-[350px] bg-[#fee2c6]'>
+                    <img className='rounded-3xl h-[250px] w-[400px] max-md:w-[300px] max-md:h-[200px]' src={Hbg2} alt="" />
                     <div class="mt-8 h-1 w-full bg-neutral-200 dark:bg-neutral-600">
                         <div class="h-1 bg-orange-400 w-[35%]">
                         </div>
                     </div>
-
                     <div className='flex gap-8 mt-8 justify-center'>
                         <FaBackward size={55} />
                         <FaPlay size={55} />
