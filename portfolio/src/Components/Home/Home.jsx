@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer'
 
 const Home = () => {
     return (
-        <div className='cursor-cheese'>
+        <div className=''>
             <Navbar />
             <HeaderHome />
             <MainHome />
