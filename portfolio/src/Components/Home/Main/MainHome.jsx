@@ -1,27 +1,18 @@
 import React, { useState } from 'react';
-import ListElement from './Components/ListElement';
-import FingerBallCut from '../../../video/fingerBallCut.mp4'
-import FingerBallCut2 from '../../../video/fingerBallCut2.mp4'
-import ResponsiveListElement from './Components/ResponsiveListElement';
+
 
 
 
 const MainHome = () => {
-    //state change on click (function firstHandleClick())
-    const [firstClick, setFirstClick] = useState(false);
-    //state change on click (function firstHandleClick())
-    const [secondVideo, setSecondVideo] = useState(false);
-    //Title && Paragraph number
-    const [sectionNumber, setSectionNumber] = useState(1);
 
     //title
     const titleVariants = {
-        1: 'About Me',
-        2: 'My Skills',
-        3: 'My Goals',
-        4: 'This Portfolio',
-        5: 'Collaborations',
-        6: 'Blog',
+        1: '01 About Me',
+        2: '02 My Skills',
+        3: '03 My Goals',
+        4: '04 This Portfolio',
+        5: '05 Collaborations',
+        6: '06 Blog',
     }
     //paragraph
     const paragraphVariants = {
@@ -43,120 +34,64 @@ const MainHome = () => {
         6: "Coming soon...",
     }
 
-
-
     return (
-        <>
-            <main className={`max-xl:hidden flex w-full mt-16 p-20 gap-14 justify-between`}>
-                <div className={`max-xl:hidden flex w-full bg-[#fee2c6] rounded-3xl shadow-2xl`}>
-                    <ul className='p-10 w-full'>
-                        <ListElement
-                            elementNumber={1}
-                            listElementTitle={'01 About Me'}
-                            hoverColor={'orange'}
-                            updateClick={setFirstClick}
-                            changeVideo={setSecondVideo}
-                            firstClick={firstClick}
-                            setSectionNumber={setSectionNumber}
-                        />
-                        <ListElement
-                            elementNumber={2}
-                            listElementTitle={'02 My Skills'}
-                            hoverColor={'orange2'}
-                            updateClick={setFirstClick}
-                            changeVideo={setSecondVideo}
-                            firstClick={firstClick}
-                            setSectionNumber={setSectionNumber}
-                        />
-                        <ListElement
-                            elementNumber={3}
-                            listElementTitle={'03 My Goals'}
-                            hoverColor={'orange3'}
-                            updateClick={setFirstClick}
-                            changeVideo={setSecondVideo}
-                            firstClick={firstClick}
-                            setSectionNumber={setSectionNumber}
-                        />
-                        <ListElement
-                            elementNumber={4}
-                            listElementTitle={'04 This Portfolio'}
-                            hoverColor={'orange4'}
-                            updateClick={setFirstClick}
-                            changeVideo={setSecondVideo}
-                            firstClick={firstClick}
-                            setSectionNumber={setSectionNumber}
-                        />
-                        <ListElement
-                            elementNumber={5}
-                            listElementTitle={'05 Collaborations'}
-                            hoverColor={'orange5'}
-                            updateClick={setFirstClick}
-                            changeVideo={setSecondVideo}
-                            firstClick={firstClick}
-                            setSectionNumber={setSectionNumber}
-                        />
-                        <ListElement
-                            elementNumber={6}
-                            listElementTitle={'06 Blog'}
-                            hoverColor={'orange6'}
-                            updateClick={setFirstClick}
-                            changeVideo={setSecondVideo}
-                            firstClick={firstClick}
-                            setSectionNumber={setSectionNumber}
-                        />
-                    </ul>
+        <main className='max-md:pl-5 max-md:pr-5 max-lg:pl-10 max-lg:pr-10 pl-72 pr-72 relative mt-52'>
+            {/*  */}
+            <div className={`max-md:min-h-[500px] max-md:justify-start max-lg:min-h-[500px] max-lg:justify-start min-h-[600px] sticky top-[100px] mb-10 rounded-3xl bg-[#ff7000] shadow-2xl flex flex-col justify-start items-center self-center object-center`}>
+                <div className={`p-4 text-center`}>
+                    <h2 className='text-white text-3xl font-bold text-center mb-3'>{titleVariants[1]}</h2>
+                    <h3 className='max-md:hidden text-[20px] font-medium text-center'>{paragraphVariants[1]}</h3>
+                    {/* responsive text */}
+                    <h3 className='text-[19px] font-medium text-center'>{responsiveParagraphVariants[1]}</h3>
+
                 </div>
-
-                <div className={`max-xl:hidden h-[550px] overflow-hidden hover:overflow-scroll rounded-3xl bg-[#f3ede2] shadow-2xl ${firstClick === false ? 'w-2/6' : 'w-full ease-in-out duration-1000'}`}>
-                    {/* paragraph */}
-                    <div className={`${firstClick === false ? 'hidden' : 'block'} p-10 `}>
-                        <h2 className='text-orange-400 text-4xl font-bold text-left mb-3'>{titleVariants[sectionNumber]}</h2>
-                        <h3 className='max-lg:text-red-600 text-[22px] font-medium text-left'>{paragraphVariants[sectionNumber]}</h3>
-                    </div>
-                    {/* video */}
-                    {secondVideo === false ? <video src={FingerBallCut}
-                        autoplay="{true}" loop muted
-                        className={`${firstClick == true ? 'hidden' : 'block'} h-[550px] rounded-3xl transform scaley(-1) `}>
-                    </video> :
-                        <video src={FingerBallCut2}
-                            autoplay="{true}" loop muted
-                            className="h-[550px] rounded-3xl transform scaley(-1)">
-                        </video>
-                    }
+            </div>
+            {/* */}
+            <div className={`max-md:min-h-[500px] max-md:justify-start max-md:top-[160px] max-lg:min-h-[500px] max-lg:justify-start min-h-[600px] sticky top-[160px] mb-10 rounded-3xl bg-[#ff7900] shadow-2xl flex flex-col justify-start items-center self-center object-center`}>
+                <div className={`p-4 text-center`}>
+                    <h2 className='text-white text-3xl font-bold text-center mb-3'>{titleVariants[2]}</h2>
+                    <h3 className='max-md:hidden text-[20px] font-medium text-center'>{paragraphVariants[2]}</h3>
+                    {/* responsive text */}
+                    <h3 className='text-[19px] font-medium text-center'>{responsiveParagraphVariants[2]}</h3>
                 </div>
+            </div>
+            {/**/}
+            <div className={`max-md:min-h-[500px] max-md:justify-start max-lg:min-h-[500px] max-lg:justify-start min-h-[600px] sticky top-[220px] mb-10 rounded-3xl bg-[#ff8000] shadow-2xl flex flex-col justify-start items-center self-center object-center`}>
+                <div className={`p-4 text-center`}>
+                    <h2 className='text-white text-3xl font-bold text-center mb-3'>{titleVariants[3]}</h2>
+                    <h3 className='max-md:hidden text-[20px] font-medium text-center'>{paragraphVariants[3]}</h3>
+                    {/* responsive text */}
+                    <h3 className='text-[19px] font-medium text-center'>{responsiveParagraphVariants[3]}</h3>
+                </div>
+            </div>
 
+            {/**/}
+            <div className={`max-md:min-h-[500px] max-md:justify-start max-lg:min-h-[500px] max-lg:justify-start min-h-[600px] sticky top-[280px] mb-10 rounded-3xl bg-[#ff9800] shadow-2xl flex flex-col justify-start items-center self-center object-center`}>
+                <div className={`p-4 text-center`}>
+                    <h2 className='text-white text-3xl font-bold text-center mb-3'>{titleVariants[4]}</h2>
+                    <h3 className='max-md:hidden text-[20px] font-medium text-center'>{paragraphVariants[4]}</h3>
+                    {/* responsive text */}
+                    <h3 className='text-[19px] font-medium text-center'>{responsiveParagraphVariants[4]}</h3>
+                </div>
+            </div>
+            {/* 
+ */}
+            <div className={`max-md:min-h-[500px] max-md:justify-start max-lg:min-h-[500px] max-lg:justify-start min-h-[600px] sticky top-[340px] mb-10 rounded-3xl bg-[#FFA500] shadow-2xl flex flex-col justify-start items-center self-center object-center`}>
+                <div className={`p-4 text-center`}>
+                    <h2 className='text-white text-3xl font-bold text-center mb-3'>{titleVariants[5]}</h2>
+                    <h3 className='max-md:hidden text-[20px] font-medium text-center'>{paragraphVariants[5]}</h3>
+                    {/* responsive text */}
+                    <h3 className='text-[19px] font-medium text-center'>{responsiveParagraphVariants[5]}</h3>
+                </div>
+            </div>
+            <div className={`max-md:justify-start max-md:mb-42 max-lg:min-h-[480px] min-h-[570px] max-lg:justify-start max-lg:mb-16 sticky top-[380px] mb-32 rounded-3xl bg-[#FFB100] shadow-2xl flex flex-col justify-start items-center self-center object-center`}>
+                <div className={`p-4 text-center`}>
+                    <h2 className='text-white text-3xl font-bold text-center mb-3'>{titleVariants[6]}</h2>
+                    <h3 className='max-md:min-h-[260px] text-[20px] font-medium text-center mb-32'>{paragraphVariants[6]}</h3>
+                </div>
+            </div>
 
-            </main >
-
-            {/* responsive */}
-            <main className='flex flex-wrap gap-10 justify-center items-center mt-20'>
-                <ResponsiveListElement
-                    title={"01 About Me"}
-                    paragraph={responsiveParagraphVariants[1]}
-                />
-                <ResponsiveListElement
-                    title={"02 My Skills"}
-                    paragraph={responsiveParagraphVariants[2]}
-                />
-                <ResponsiveListElement
-                    title={"03 My Goals"}
-                    paragraph={responsiveParagraphVariants[3]}
-                />
-                <ResponsiveListElement
-                    title={"04 This Portfolio "}
-                    paragraph={responsiveParagraphVariants[4]}
-                />
-                <ResponsiveListElement
-                    title={"05 Collaborations"}
-                    paragraph={responsiveParagraphVariants[5]}
-                />
-                <ResponsiveListElement
-                    title={"06 Blog"}
-                    paragraph={responsiveParagraphVariants[6]}
-                />
-            </main>
-
-        </>
+        </main>
     );
 };
 
